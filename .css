@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   height: 100px; 
+  flex-wrap: wrap;
 }
 
 .header-titulo {
@@ -107,12 +108,19 @@ footer {
    max-width: 230px;
    margin: 0 auto;
    padding: 0 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header {
-    height: 80px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: center;
   }
 
   .header-titulo {
@@ -135,6 +143,8 @@ footer {
     flex-direction: column;
     height: auto;
     padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .header-titulo {
@@ -167,5 +177,10 @@ footer {
 
   .card-body {
     font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .me-3 {
+    margin-top: 10px;
   }
 }

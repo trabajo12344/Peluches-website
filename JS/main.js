@@ -1,4 +1,3 @@
-
 const productos = [
   { nombre: "Creeper", precio: 5000, imagen: "imagenes/creeper.jpg" },
   { nombre: "Steve", precio: 8000, imagen: "imagenes/steve.jpg" },
@@ -71,7 +70,7 @@ function agregarAlCarrito(nombre, precio) {
         boton.classList.remove('btn-info');
         boton.classList.add('btn-primary');
         boton.disabled = false; 
-      }, 1000); ndo
+      }, 1000);
     }
   });
 }

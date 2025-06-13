@@ -1,0 +1,82 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #be879f;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  padding: -3px;
+}
+footer {
+ background-color: #333;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 1px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #994a8e7b;
+    color:plum
+}
+
+#logo {
+  border-radius: 4px;
+  border: 3px solid white;
+}
+
+.card {
+  border: 5px solid #e5e259;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color:darkseagreen
+}
+
+.precio-producto{
+  color: #228B22; 
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body {
+  color: crimson; 
+  font-size: 1.1rem;
+}
+
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 4px solid #8c43a2ab;
+  border-radius: 15px;
+  z-index: 1000;
+  display: none;
+  max-width: 500px;
+  width: 90%;
+}
+
+.cerrarModal {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.btn{
+  margin: 5px;
+}
+.btn-primary  {
+ background-color: #9f689a;
+}

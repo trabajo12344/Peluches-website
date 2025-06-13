@@ -56,7 +56,26 @@ function agregarAlCarrito(nombre, precio) {
 
   actualizarVistaCarrito();
   actualizarContador();
+
+  const botones = document.querySelectorAll('.btn');
+
+  botones.forEach(boton => {
+    if (boton.getAttribute('onclick') === `agregarAlCarrito('${nombre}', ${precio})`) {
+      boton.textContent = 'Agregado ✅';
+      boton.classList.remove('btn-primary');
+      boton.classList.add('btn-info');
+      boton.disabled = true; 
+
+      setTimeout(() => {
+        boton.textContent = 'Agregar al carrito';
+        boton.classList.remove('btn-info');
+        boton.classList.add('btn-primary');
+        boton.disabled = false; 
+      }, 1000); ndo
+    }
+  });
 }
+
 
 function actualizarContador() {
   const contador = document.getElementById('contadorCarrito');
